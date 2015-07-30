@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'Covered By Your Grace';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Covered By Your Grace'), local('CoveredByYourGrace'), url(../fonts/CoveredByYourGrace.woff) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+.pane, .view{
+	background: #CCC;
+}
+.bar.bar-stable .title{
+	color: #0A5960;
+	font-family: 'Covered By Your Grace', cursive;
+	font-size: 28px;
+}
+.pull-right{
+	float: right;
+}
+.pull-left{
+	float: left;
+}
+.menu_container{
+    width: 60%;
+    margin: 0 auto;
+    min-width: 252px;
+    border: 7px solid #FFF;
+    -webkit-border-radius: 10px; 
+    -moz-border-radius: 10px; 
+    border-radius: 10px;
+    background-color: #0A5960;
+    margin-top: 5px;
+}
+.menu_container h2{
+    font-family: 'Covered By Your Grace', cursive;
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 5px;
+    font-size: 30px;
+}
+.menu_container .row .col{
+    padding: 10px;
+    text-align: center;
+    color: #FFF;
+    padding-top: 0px;
+}
+.menu_container .row .col a{
+    font-size: 70px;
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+    width: 90px;
+    height: 90px;
+    line-height: 74px;
+    margin: 0 auto;
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+}
+@media only screen and (min-width: 600px) {
+	.menu_container .row .col a{
+		font-size: 120px;
+	    width: 150px;
+	    height: 150px;
+	    line-height: 120px;
+	}
+	.menu_container h2{
+		font-size: 50px;
+	}
+}
+@media only screen and (min-width: 900px) {
+	.menu_container .row .col a{
+		font-size: 200px;
+	    width: 240px;
+	    height: 240px;
+	    line-height: 200px;
+	}
+	.menu_container h2{
+		font-size: 60px;
+	}
+}
