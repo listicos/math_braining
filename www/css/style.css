@@ -1,30 +1,97 @@
+/*@font-face {
+    font-family: 'Architects Daughter';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Architects Daughter'), local('ArchitectsDaughter'),
+    url('../fonts/ArchitectsDaughter.woff2') format('woff2'),
+    url('../fonts/ArchitectsDaughter.ttf') format('truetype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+*/
 @font-face {
-  font-family: 'Covered By Your Grace';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Covered By Your Grace'), local('CoveredByYourGrace'), url(../fonts/CoveredByYourGrace.woff) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+    font-family: 'Short Stack';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Short Stack'), local('ShortStack'),
+    url('../fonts/ShortStack.woff2') format('woff2'),
+    url('../fonts/ShortStack.ttf') format('truetype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
-
+.header-item.title{
+    font-size: 20px;
+    font-weight: bold;
+}
+h1, h2, h3, h4, h5, p, .title, a{
+    color: #FFF;
+    font-family: 'Short Stack', cursive;
+}
+h3{
+    font-size: 20px;
+}
+h3 .icon{
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: -3px;
+}
+.title{
+    color: #0A5960;
+}
 .pane, .view{
-	background: #CCC;
-}
-.bar.bar-stable .title{
-	color: #0A5960;
-	font-family: 'Covered By Your Grace', cursive;
-	font-size: 28px;
+    background: #CCC;
 }
 .pull-right{
-	float: right;
+    float: right;
 }
 .pull-left{
-	float: left;
+    float: left;
+}
+.menu_container .row.elements_row .col{
+    padding: 4px;
+}
+.elements_row .element{
+    font-size: 50px;
+}
+.row.sign_row{
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.sign_row .sign{
+    font-size: 60px;
+    line-height: 50px;
+}
+.results_row{
+    border-top: 1px solid #CCC;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15px!important;
+}
+.menu_container .row.results_row a{
+    display: block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 44px;
+    font-family: 'Short Stack', cursive;
+    padding: 5px 2px;
+    border-radius: 50%;
+    line-height: 58px;
+    margin: 0 auto;
+    background-color: rgba(95, 84, 84, 0.37);
+    color: #FFF;
+    border: 1px solid #CCC;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.menu_container .row.results_row a:hover{
+    border: 1px solid #888;
+    color:#CCC;
 }
 .menu_container{
-    width: 60%;
+    width: 99%;
     margin: 0 auto;
     min-width: 252px;
-    border: 7px solid #FFF;
+    border: 5px solid #FFF;
     -webkit-border-radius: 10px; 
     -moz-border-radius: 10px; 
     border-radius: 10px;
@@ -32,50 +99,110 @@
     margin-top: 5px;
 }
 .menu_container h2{
-    font-family: 'Covered By Your Grace', cursive;
+    font-family: 'Short Stack', cursive;
     color: #FFF;
     text-align: center;
     margin-bottom: 0;
     padding-bottom: 0;
-    padding-top: 5px;
+    padding-top: 0px;
     font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 .menu_container .row .col{
     padding: 10px;
     text-align: center;
     color: #FFF;
-    padding-top: 0px;
+    padding-top: 5px;
 }
-.menu_container .row .col a{
+.home .menu_container .row .col a{
     font-size: 70px;
     color: #FFF;
     text-decoration: none;
     display: block;
     width: 90px;
     height: 90px;
-    line-height: 74px;
+    line-height: 90px;
     margin: 0 auto;
     -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
 }
+.list{
+    width: 80%;
+    margin: 0 auto;
+}
+.list .item:first-child{
+    border-top: none;
+}
+.list .item{
+    background-color: transparent;
+    border-right: 0;
+    border-left: 0;
+    border-style: groove;
+}
+.list .item a{
+    color: #FFF;
+    font-family: 'Short Stack', cursive;
+    font-size: 29px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+.menu_container .score{
+    padding-top: 0;
+    
+    font-size: 90px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.menu_container .score_options{}
+.menu_container .score_options a{
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 200px;
+    margin: 0 auto;
+}
+.menu_container .score_p{
+    font-size: 18px;
+    color: #CCC;
+}
 @media only screen and (min-width: 600px) {
-	.menu_container .row .col a{
-		font-size: 120px;
-	    width: 150px;
-	    height: 150px;
-	    line-height: 120px;
-	}
-	.menu_container h2{
-		font-size: 50px;
-	}
+    .home .menu_container .row .col a{
+        font-size: 120px;
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+    }
+    .menu_container h2{
+        font-size: 50px;   
+    }
+    h3{
+        font-size: 30px;
+    }
+    .header-item.title {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    h3 .icon{
+        font-size: 40px;
+    }
+    .elements_row .element{
+        font-size: 60px;
+    }
+    .menu_container{
+        margin-top: 40px;
+    }
 }
 @media only screen and (min-width: 900px) {
-	.menu_container .row .col a{
-		font-size: 200px;
-	    width: 240px;
-	    height: 240px;
-	    line-height: 200px;
-	}
-	.menu_container h2{
-		font-size: 60px;
-	}
+    .home .menu_container .row .col a{
+        font-size: 200px;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+    }
+    .menu_container h2{
+        font-size: 60px;
+    }
+    .menu_container{
+        margin-top: 50px;
+    }
 }

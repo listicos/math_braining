@@ -4,40 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
-
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script src="lib/ionic/js/ionic.bundle.js"></script>
     <script src="cordova.js"></script>
     <script src="js/app.js"></script>
-  </head>
-  <body ng-app="starter">
 
+    <script src="lib/angular-timer/angular-timer.min.js"></script>
+  </head>
+  <body ng-app="math">
     <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Math Braining</h1>
-      </ion-header-bar>
-      <ion-content>
-        <div class="menu_container">
-          <h2 class="title">Menu</h2>
-          <div class="row">
-            <div class="col">
-              <a class="button button-block button-balanced pull-right" href="">+</a>
-            </div>
-            <div class="col subtract">
-              <a class="button button-block button-assertive pull-left" href="">-</a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col multiply">
-              <a class="button button-block button-royal pull-right" href="">x</a>
-            </div>
-            <div class="col divide">
-              <a class="button button-block button-energized pull-left" href="">÷</a>
-            </div>
-          </div>
-        </div>
-      </ion-content>
+      <ion-nav-bar></ion-nav-bar>
+      <ion-nav-view></ion-nav-view>
     </ion-pane>
   </body>
 </html>

@@ -1,0 +1,25 @@
+<ion-view view-title="Score">
+	<ion-content>
+		<div class="menu_container">
+			<div class="row">
+				<div class="col">
+					<h1 class="score">{{score}}</h1>
+					<h2 class="icon-right">points</h2>
+					<p class="score_p">In <timer autostart="false" start-time="startTime" language="en">{{minuteUnit}}</timer></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col score_options">
+					<a class="button button-block icon-left ion-refresh button-calm" ng-click="repeat()">
+						Repeat
+					</a>
+				</div>
+				<div class="col score_options">
+					<a class="button button-block icon-left ion-connection-bars button-balanced" href="#/level/{{type}}">
+						Levels
+					</a>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
