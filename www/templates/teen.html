@@ -1,8 +1,40 @@
 <ion-view view-title="Teen {{level}}">
 	<ion-nav-bar>
-		<ion-nav-back-button>Home</ion-nav-back-button>
+		<ion-nav-back-button ng-click="back()">Levels</ion-nav-back-button>
   	</ion-nav-bar>
 	<ion-content>
-		+
+		<div class="menu_container teen">
+			<div class="row">
+				<div class="col">
+					<h3 class="icon-right">Choose the correct answer 
+						<!--<a class="icon ion-ios-help-outline pull-right"></a>-->
+					</h3>
+				</div>
+			</div>
+			<div class="row elements_row">
+				<div class="col">
+					<p class="element_letter">{{first.size}} {{sign}} {{second.size}} 
+						<span ng-if="rows>=3">{{sign}} {{third.size}}</span>
+					</p>
+				</div>
+			</div>
+			<!--
+			<div class="row elements_row">
+				<div class="col">
+					<p class="element_letter"><a ng-if="rows<3"  class="sign">{{sign}}</a> {{second.size}}</p>
+				</div>
+			</div>
+			-->
+			<!--<div ng-if="rows>=3" class="row elements_row">
+				<div class="col">
+					<p class="element_letter"><a class="sign">{{sign}}</a> {{third.size}}</p>
+				</div>
+			</div>-->
+			<div class="row results_row">
+				<div class="col" ng-repeat="result in results track by $index">
+					<a ng-click="validate(result)">{{result}}</a>
+				</div>
+			</div>
+		</div>
 	</ion-content>
 </ion-view>

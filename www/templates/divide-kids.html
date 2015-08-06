@@ -1,0 +1,31 @@
+<ion-view view-title="Kids">
+	<ion-nav-bar>
+		<ion-nav-back-button ng-click="back()">Levels</ion-nav-back-button>
+  	</ion-nav-bar>
+	<ion-content>
+		<div class="menu_container divide">
+			<div class="row">
+				<div class="col">
+					<h3 class="icon-right">Choose the correct answer 
+						<!--<a class="icon ion-ios-help-outline pull-right"></a>-->
+					</h3>
+				</div>
+			</div>
+			<div class="row elements_row">
+				<div class="col" ng-repeat="item in range(first.size) track by $index">
+					<i class="element icon {{first.icon}} {{first.color}}"></i>
+				</div>
+			</div>
+			<div class="row elements_row">
+				<div class="col">
+					{{first.size}} ÷ {{second.size}}
+				</div>
+			</div>
+			<div class="row results_row">
+				<div class="col" ng-repeat="result in results track by $index">
+					<a ng-click="validate(result)">{{result}}</a>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

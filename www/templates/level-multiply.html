@@ -1,0 +1,27 @@
+<ion-view view-title="Learn to multiply">
+  <ion-nav-bar>
+    <ion-nav-back-button>Levels</ion-nav-back-button>
+    </ion-nav-bar>
+  <ion-content>
+    <div class="menu_container multiply-level">
+      <div class="row">
+        <div class="col">
+          <h3>Tables to learn</h3>
+        </div>
+      </div>
+      <ul class="list">
+        <li class="item item-title">
+          <a href="#/{{type}}/multiply/play/{{level}}" class="button button-block icon-right ion-play button-royal play" ng-click="play($event)">
+            Play
+          </a>
+        </li>
+        <li class="item item-checkbox" ng-repeat="time in times">
+           <label class="checkbox checkbox-royal">
+             <input ng-model="time.selected" type="checkbox">
+           </label>
+           <a>{{time.number}}</a>
+        </li>
+      </ul>
+    </div>
+  </ion-content>
+</ion-view>

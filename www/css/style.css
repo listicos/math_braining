@@ -20,6 +20,7 @@
 .header-item.title{
     font-size: 20px;
     font-weight: bold;
+    text-transform: uppercase;
 }
 h1, h2, h3, h4, h5, p, .title, a{
     color: #FFF;
@@ -27,6 +28,7 @@ h1, h2, h3, h4, h5, p, .title, a{
 }
 h3{
     font-size: 20px;
+    margin-bottom: 0px;
 }
 h3 .icon{
     font-size: 30px;
@@ -45,19 +47,30 @@ h3 .icon{
 .pull-left{
     float: left;
 }
+.menu_container .elements_row{
+    line-height: 70px;
+    padding-bottom: 0px;
+}
 .menu_container .row.elements_row .col{
     padding: 4px;
+    padding-bottom: 0;
 }
 .elements_row .element{
     font-size: 50px;
+}
+.elements_row .element_letter{
+    font-size: 60px;
+    
 }
 .row.sign_row{
     padding-top: 5px;
     padding-bottom: 10px;
 }
 .sign_row .sign{
-    font-size: 60px;
-    line-height: 50px;
+    font-size: 80px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
 }
 .results_row{
     border-top: 1px solid #CCC;
@@ -65,13 +78,28 @@ h3 .icon{
     margin: 0 auto;
     margin-top: 15px!important;
 }
+.menu_container.teen .row.results_row a{
+    font-size: 22px;
+}
+.menu_container.teen .row.elements_row .element_letter{
+    text-align: center;
+    margin-bottom: 0;
+}
+.menu_container.teen .element_letter a.sign{
+    position: absolute;
+    right: 140px;
+}
+.menu_container.teen .row.sign_row .sign{
+    float: right;
+
+}
 .menu_container .row.results_row a{
     display: block;
     width: 70px;
     height: 70px;
     text-align: center;
     font-weight: bold;
-    font-size: 44px;
+    font-size: 30px;
     font-family: 'Short Stack', cursive;
     padding: 5px 2px;
     border-radius: 50%;
@@ -132,6 +160,8 @@ h3 .icon{
 }
 .list .item:first-child{
     border-top: none;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 .list .item{
     background-color: transparent;
@@ -165,6 +195,55 @@ h3 .icon{
     font-size: 18px;
     color: #CCC;
 }
+
+/*Multiply*/
+.multiply-level .list{
+    width: 95%;
+}
+.multiply-level .item-title{
+    padding-top: 0px;
+    
+}
+.multiply .play{
+    font-size: 25px;
+}
+.multiply h3{
+    font-size: 17px;
+}
+.menu_container.multiply .row.elements_row .element_letter{
+    text-align: center;
+    font-size: 36px;
+}
+
+/*Keyboard*/
+.keyboard_row{
+    max-width: 250px;
+    
+    margin: 0 auto;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+.keyboard_row .col{}
+.keyboard_row .col a{
+    font-size: 50px;
+    border: 1px solid #888;
+    width: 55px;
+    display: block;
+    margin: 0 auto;
+    height: 55px;
+    line-height: 55px;
+    -webkit-border-radius: 10px; -moz-border-radius: 10px; 
+    border-radius: 10px;
+    cursor: pointer;
+    border-right: 0;
+    border-top: 0;
+    border-left: 0;
+}
+.keyboard_row .col .icon{
+}
+.checkbox input:before, .checkbox-icon:before{
+    background: transparent;
+}
 @media only screen and (min-width: 600px) {
     .home .menu_container .row .col a{
         font-size: 120px;
@@ -190,6 +269,12 @@ h3 .icon{
     }
     .menu_container{
         margin-top: 40px;
+    }
+    .menu_container.multiply .row.elements_row .element_letter{
+        font-size: 55px;
+    }
+    .multiply h3{
+        font-size: 25px;
     }
 }
 @media only screen and (min-width: 900px) {

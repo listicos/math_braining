@@ -12,18 +12,24 @@
 				</div>
 			</div>
 			<div class="row elements_row">
-				<div class="col" ng-repeat="item in range(first.size) track by $index">
+				<div class="col" ng-if="first.number == 0 && level == 1" ng-repeat="item in range(first.size) track by $index">
 					<i class="element icon {{first.icon}} {{first.color}}"></i>
+				</div>
+				<div class="col" ng-if="first.number == 1 || level == 2">
+					<p class="element_letter">{{first.size}}</p>
 				</div>
 			</div>
 			<div class="row sign_row">
 				<div class="col">
-					<a class="sign">+</a>
+					<a class="sign">{{sign}}</a>
 				</div>
 			</div>
 			<div class="row elements_row">
-				<div class="col" ng-repeat="item in range(second.size) track by $index">
+				<div class="col" ng-if="second.number == 0 && level == 1" ng-repeat="item in range(second.size) track by $index">
 					<i class="element icon {{second.icon}} {{second.color}}"></i>
+				</div>
+				<div class="col" ng-if="second.number == 1 || level == 2">
+					<p class="element_letter">{{second.size}}</p>
 				</div>
 			</div>
 			<div class="row results_row">

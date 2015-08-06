@@ -1,4 +1,4 @@
-<ion-view view-title="Levels">
+<ion-view view-title="{{type}}">
   <ion-nav-bar>
     <ion-nav-back-button ng-click="back()">Home</ion-nav-back-button>
     </ion-nav-bar>
@@ -6,7 +6,7 @@
     <div class="menu_container">
       <ul class="list">
           <li class="item">
-            <a href="#/practice/{{type}}/1">Practice</a>
+            <a href="#/practice/{{type}}/1">Learn</a>
           </li>
           <li class="item">
             <a href="#/kids/{{type}}/1">Kids 1</a>
@@ -20,12 +20,14 @@
           <li class="item">
             <a href="#/teen/{{type}}/2">Teen 2</a>
           </li>
+          <!--
           <li class="item">
             <a href="#/pro/{{type}}/1">Professional 1</a>
           </li>
           <li class="item">
             <a href="#/pro/{{type}}/2">Professional 2</a>
           </li>
+          -->
       </ul>
     </div>
   </ion-content>

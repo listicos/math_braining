@@ -1,0 +1,74 @@
+<ion-view view-title="Multiply {{type}}">
+	<ion-nav-bar>
+		<ion-nav-back-button>Tables</ion-nav-back-button>
+  	</ion-nav-bar>
+	<ion-content>
+		<div class="menu_container multiply">
+			<div class="row">
+				<div class="col">
+					<h3 class="icon-right">Type the correct answer
+						<!--<a class="icon ion-ios-help-outline pull-right"></a>-->
+					</h3>
+				</div>
+			</div>
+			<div class="row elements_row">
+				<div class="col">
+					<p class="element_letter">{{first}} {{sign}} {{second}} = {{result}}</p>
+				</div>
+			</div>
+			<div class="row results_row">
+				<div class="col">
+					
+				</div>
+			</div>
+			<div class="row keyboard_row">
+				<div class="col">
+					<a ng-click="keyboard(7)">7</a>
+				</div>
+				<div class="col">
+					<a ng-click="keyboard(8)">8</a>
+				</div>
+				<div class="col">
+					<a ng-click="keyboard(9)">9</a>
+				</div>
+			</div>
+			<div class="row keyboard_row">
+				<div class="col">
+					<a ng-click="keyboard(4)">4</a>
+				</div>
+				<div class="col">
+					<a ng-click="keyboard(5)">5</a>
+				</div>
+				<div class="col">
+					<a ng-click="keyboard(6)">6</a>
+				</div>
+			</div>
+			<div class="row keyboard_row">
+				<div class="col">
+					<a ng-click="keyboard(1)">1</a>
+				</div>
+				<div class="col">
+					<a ng-click="keyboard(2)">2</a>
+				</div>
+				<div class="col">
+					<a ng-click="keyboard(3)">3</a>
+				</div>
+			</div>
+			<div class="row keyboard_row">
+				<div class="col">
+					<a ng-click="keyboard(0)">0</a>
+				</div>
+				<div class="col">
+					<a ng-click="delete()" class="icon">
+						<i class="ion-backspace-outline"></i>
+					</a>
+				</div>
+				<div class="col">
+					<a ng-click="validate()" class="icon">
+						<i class="ion-checkmark-round"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
